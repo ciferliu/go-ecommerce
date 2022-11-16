@@ -1,0 +1,17 @@
+dev:
+  app_name: go-ecommerce
+  http_port: 8080
+  jwt:
+    secret_key: "8K6NovCgto7wo4mz8KyIhOiQpvCnq4vwqa6p54m18JCgrA=="
+    ttl: 168h #time to live, format: 1h30m0s = 1 hour and 30 minute and 0 second
+  log:
+    file: ecommerce.log
+    level: info
+  datasource:
+    url: "tcp(127.0.0.1:3306)/ecommerce?charset=utf8mb4&parseTime=true"
+    username: "root"
+    password: "cifer@123456"
+  redis:
+    address: "54.213.129.3:6379"
+    password: "x5$8Z7gW%6kcpd%f"
+    db: 3
